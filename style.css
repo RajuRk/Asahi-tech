@@ -344,6 +344,9 @@ p.title-sub{
         top: 15%;
         padding: 15px 50px;
     }
+    #banner{
+        height: auto;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .color-desc{

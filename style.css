@@ -116,7 +116,7 @@ body{
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
-    margin: 0px 15px;
+    margin: 5px 15px;
 }
 /* Automation section */
 #automation{
@@ -308,6 +308,7 @@ p.title-sub{
     text-transform: uppercase;
     padding: 9px 40px;
     border-radius: 35px;
+    margin-bottom: 35px;
 }
 .but-submit{
     text-align: center;
@@ -322,8 +323,56 @@ p.title-sub{
 }
 
 /* Media Query */
+@media only screen and (min-width: 300px) and (max-width: 450px){
+    .color-desc{
+      top: 15%;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 600px){
+    .color-desc{
+        top: 20%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 767px){
+    .color-desc{
+        top: 24%;
+        padding: 20px 85px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .color-desc{
+        top: 15%;
+        padding: 15px 50px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .color-desc{
+        top: 15%;
+        padding: 15px 50px;
+    }
+}
 @media only screen and (max-width: 600px){
-    .banner-title{
-
+    .trasparent-bg{
+        position: static;
+        background-color: #000;
+    }
+    .fields{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .fields .inputs{
+        width: 100%;
+    }
+    .btn-attach{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 767px){
+    #banner{
+        height: auto;
+    }
+    .icon-flex{
+        flex-direction: column;
+        align-items: center;
     }
 }
